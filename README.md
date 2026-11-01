@@ -6,7 +6,7 @@ vector index, and an LLM with a vector index.
 
 Course: AI in Accounting and Business (B150316101), SDU, autumn 2026. Assignment 1, policy case.
 
-**Website:** https://policy-assistant.streamlit.app/
+**Website:** https://policy-assistant-p3q6xcgdnkchbbscxz6pvn.streamlit.app/
 
 ## The three methods
 
