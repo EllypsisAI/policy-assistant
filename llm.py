@@ -70,6 +70,18 @@ def client():
     return _client
 
 
+def match_title(title):
+    """The model sometimes repeats the category after the title, "Password Policy (IT & Security)",
+    as the policies are listed that way in the prompt. That suffix is dropped; anything else that
+    is not a real title is kept as given, so an invented title shows up in the evaluation."""
+    if not title:
+        return None
+    key = title.strip().lower()
+    if key not in TITLES and key.endswith(")") and " (" in key:
+        key = key.rsplit(" (", 1)[0]
+    return TITLES.get(key, title)
+
+
 def format_policies(policies):
     return "\n".join(f"- {p['title']} ({p['category']}): {p['policy_text']}" for p in policies)
 
@@ -91,8 +103,7 @@ def ask(question, policies):
                 time.sleep(2)
                 continue
             u = resp.usage_metadata
-            title = data.get("policy")
-            data["policy"] = TITLES.get(title.strip().lower(), title) if title else None
+            data["policy"] = match_title(data.get("policy"))
             return {**data, "model": model, "seconds": time.perf_counter() - t0,
                     "tokens_in": u.prompt_token_count or 0,
                     "tokens_out": (u.candidates_token_count or 0) + (u.thoughts_token_count or 0)}

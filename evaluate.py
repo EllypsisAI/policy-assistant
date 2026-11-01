@@ -45,7 +45,7 @@ def check(q, r):
     }
 
 
-def run(module_name):
+def run(module_name, tag=""):
     module = importlib.import_module(module_name)
     rows = []
     for q in load_questions():
@@ -55,7 +55,7 @@ def run(module_name):
         print(f"{q['id']:>2} {'ok ' if row['policy_ok'] else 'NO '}{'ok ' if row['status_ok'] else 'NO '}"
               f"{q['question'][:50]:<50} -> {r['policy']} [{row['status']}] {row['unknown_numbers']}", flush=True)
     RESULTS.mkdir(exist_ok=True)
-    path = RESULTS / f"{module_name}.csv"
+    path = RESULTS / f"{module_name}{tag}.csv"
     fields = list(dict.fromkeys(k for row in rows for k in row))
     with open(path, "w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
@@ -76,4 +76,4 @@ def run(module_name):
 
 
 if __name__ == "__main__":
-    run(sys.argv[1])
+    run(sys.argv[1], sys.argv[2] if len(sys.argv) > 2 else "")   # optional tag, e.g. _run2
