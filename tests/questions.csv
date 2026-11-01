@@ -1,0 +1,29 @@
+id,type,question,expected_policies,supported_answer
+1,direct,How many vacation days do I get per year?,Vacation Policy,15 days per year; unused days may roll over
+2,direct,Do expenses over $500 need approval?,Expense Approval Policy,Yes; prior approval from Finance
+3,direct,How often must I change my password?,Password Policy,Every 90 days; must meet complexity requirements
+4,direct,How long is the probation period for new hires?,Probation Period Policy,90 days
+5,direct,How many days of bereavement leave can I take?,Bereavement Leave Policy,Up to 5 days
+6,direct,How long is parental leave?,Parental Leave Policy,Up to 12 weeks paid for eligible employees
+7,direct,How long do I have to submit receipts for travel expenses?,Travel Reimbursement Policy,Within 30 days
+8,paraphrase,May I do my job from another country for a few weeks?,Work From Abroad Policy,Yes; up to 30 days with approval
+9,paraphrase,Can I work from home on Fridays?,Remote Work Policy,Yes; remote work up to three days per week with manager approval
+10,paraphrase,My grandmother passed away. How much time off can I get?,Bereavement Leave Policy,Up to 5 days of bereavement leave
+11,paraphrase,"I want to start at 7 and leave at 3, is that allowed?",Flexible Hours Policy,Yes with manager approval
+12,paraphrase,Can I put Spotify on my work laptop?,Software Installation Policy;Laptop Usage Policy,Only approved software; laptops for business purposes only
+13,paraphrase,A customer gave me a bottle of wine. Can I keep it?,Client Gift Policy,Must comply with company guidelines; the guidelines are not in the database
+14,paraphrase,I think someone hacked my account. What should I do?,Security Incident Policy;Incident Response Policy,Report the security incident immediately
+15,paraphrase,A journalist called me about our new product. Can I talk to them?,Media Contact Policy,Only authorized employees may speak to the media
+16,paraphrase,Will the company pay for my evening MBA?,Tuition Assistance Policy;Training Reimbursement Policy,May apply for tuition assistance for approved programs
+17,paraphrase,I am leaving the company. What do I have to hand back?,Company Property Policy;IT Asset Management Policy;Exit Clearance Policy,Company property and IT assets must be returned
+18,paraphrase,Can I post our quarterly numbers on LinkedIn?,Social Media Policy,No confidential information on social media
+19,paraphrase,My child is ill. Can I use my sick leave?,Sick Leave Policy,Yes; sick leave covers personal or family illness
+20,paraphrase,I want to buy a $300 monitor. Do I need approval from Finance first?,Expense Approval Policy;Procurement Policy;Home Office Equipment Policy,Prior approval from Finance is only required over $500; purchases must follow the procurement process
+21,missing_detail,How many sick days do I get per year?,Sick Leave Policy,Not stated; sick leave accrues monthly but the number is not in the policy
+22,missing_detail,What is the SLA for resolving support tickets?,Support Ticket Policy,Not stated; tickets must be resolved within SLA but the SLA is not given
+23,missing_detail,What is the maximum amount I can take from petty cash?,Petty Cash Policy,Not stated; only documentation and monthly reconciliation are required
+24,missing_detail,What is the daily meal allowance when I travel?,Travel Reimbursement Policy,Not stated; only the 30-day receipt rule is given
+25,out_of_scope,Can I bring my dog to the office?,,No policy covers this
+26,out_of_scope,How much does the company pay into my pension?,,No policy covers this
+27,out_of_scope,Do we get a gym membership as a benefit?,,No policy covers this
+28,out_of_scope,What is the overtime pay rate?,,No policy covers this
