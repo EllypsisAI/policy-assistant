@@ -1,0 +1,57 @@
+method,id,unsupported,misleading,note
+method1_rules,1,no,no,
+method1_rules,2,no,no,
+method1_rules,3,no,no,
+method1_rules,4,no,no,
+method1_rules,5,no,no,
+method1_rules,6,no,no,
+method1_rules,7,no,no,
+method1_rules,8,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,9,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,10,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,11,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,12,no,no,
+method1_rules,13,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,14,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,15,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,16,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,17,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,18,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,19,no,no,
+method1_rules,20,no,no,
+method1_rules,21,no,yes,"returns '15 vacation days per year' for a sick-days question; real text, wrong policy, reads like an answer"
+method1_rules,22,no,no,
+method1_rules,23,no,no,
+method1_rules,24,no,no,
+method1_rules,25,no,no,wrong or no policy; text is real but does not answer the question
+method1_rules,26,no,no,
+method1_rules,27,no,no,
+method1_rules,28,no,no,
+method2_full_context,1,no,no,leaves out that unused days may roll over
+method2_full_context,2,no,no,
+method2_full_context,3,no,no,
+method2_full_context,4,no,no,
+method2_full_context,5,no,no,
+method2_full_context,6,no,no,
+method2_full_context,7,no,no,
+method2_full_context,8,no,no,
+method2_full_context,9,no,no,
+method2_full_context,10,no,no,
+method2_full_context,11,no,no,
+method2_full_context,12,no,no,
+method2_full_context,13,no,no,
+method2_full_context,14,no,no,
+method2_full_context,15,no,no,
+method2_full_context,16,no,no,
+method2_full_context,17,no,no,
+method2_full_context,18,no,no,quotes the rule but does not say whether quarterly numbers count as confidential
+method2_full_context,19,no,no,
+method2_full_context,20,no,no,quotes the $500 rule but does not apply it to the $300 monitor
+method2_full_context,21,no,no,
+method2_full_context,22,no,no,
+method2_full_context,23,no,no,
+method2_full_context,24,no,no,
+method2_full_context,25,no,no,
+method2_full_context,26,no,no,
+method2_full_context,27,no,no,
+method2_full_context,28,no,no,
